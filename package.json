@@ -1,0 +1,33 @@
+{
+  "name": "llm-budget-guard",
+  "version": "0.1.0",
+  "description": "Two-phase reserve/reconcile LLM budget guard, sliding-window rate limiter, and concurrency cap for TypeScript APIs.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsx --test tests/*.test.ts",
+    "demo": "tsx src/demo.ts"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "budget",
+    "rate-limit",
+    "typescript",
+    "nextjs",
+    "ai-agents",
+    "cost-control"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
